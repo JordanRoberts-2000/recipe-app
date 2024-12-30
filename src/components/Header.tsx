@@ -5,8 +5,8 @@ import toggleDarkMode from "../utils/toggleDarkMode";
 
 const Header = ({}) => {
   return (
-    <header className="dark:bg-purple-500">
-      <div>
+    <header className="bg-background flex p-2 px-4 sticky top-0">
+      <div className="flex gap-4">
         <Button size={"icon"}>
           <SettingsIcon />
         </Button>
@@ -14,7 +14,7 @@ const Header = ({}) => {
           <SunIcon />
         </Button>
       </div>
-      <Button>admin</Button>
+      <Button className="ml-auto">admin</Button>
     </header>
   );
 };
